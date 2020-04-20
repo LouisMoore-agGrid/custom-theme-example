@@ -1,0 +1,18 @@
+// ag-grid.scss defines structural styles and should be imported first
+@import "~ag-grid-community/src/styles/ag-grid.scss";
+@import "~ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham-mixin.scss";
+
+
+.ag-theme-balham {
+  @include ag-theme-balham((
+    //Change the number to increase or decrease the list item size for every virtual list
+    list-item-height: 40px,
+  ));
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
